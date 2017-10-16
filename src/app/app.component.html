@@ -7,6 +7,17 @@
       <a routerLink="/admin">admin</a>
       <router-outlet></router-outlet>
 
+
+      .... liste ...
+
+      <!-- <user-form></user-form> -->
+
+      <ul>
+        <li *ngFor="let guest of guestList$ | async">
+          {{ guest.name }} : {{ guest.eMail }}
+        </li>
+      </ul>
+
     </div>
   </div>
   <div class="section welcome-section fp-section fp-table">
@@ -22,13 +33,13 @@
 
   <div class="bg">
     <div class="intro-card">
-      <div class="sunflower-bg">
+   <!--   <div class="sunflower-bg">
         <div class="sunflower-banner">
           <span class="save-the-date">Save the date</span>
           <span class="save-the-date-date">1.9.2018</span>
           <img class="sunflower" src="http://www.pngmart.com/files/4/Sunflower-PNG-HD.png">
         </div>
-      </div>
+      </div> -->
   </div>
     
     <h1>
