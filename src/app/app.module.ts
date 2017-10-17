@@ -7,13 +7,15 @@ import { MnFullpageModule } from 'ngx-fullpage';
 
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin.component';
+import { MainComponent } from './main.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent
+    AdminComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
@@ -25,10 +27,14 @@ import { AdminComponent } from './admin.component';
       {
         path: 'admin',
         component: AdminComponent
+      }, 
+      {
+        path: 'main',
+        component: MainComponent
       }
     ])
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, MainComponent]
 })
 export class AppModule { }
